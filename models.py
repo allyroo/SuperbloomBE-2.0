@@ -50,6 +50,8 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f'User {self.email} has been added to the database'
 
+#SMART goal
+
 class Habit(db.Model):
     id = db.Column(db.String, primary_key = True)
     smart_goal = db.Column(db.String(400), nullable = False)
