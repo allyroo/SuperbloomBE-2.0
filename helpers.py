@@ -5,7 +5,7 @@ from functools import wraps
 import secrets
 from flask import request, jsonify, json
 import decimal
-from models import User
+from models import User, Habit, Task
 
 
 #check if x-access token is in header for API call
